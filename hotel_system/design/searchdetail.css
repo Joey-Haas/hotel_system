@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+
+body {
+    color: #eeeeee;
+}
+
+.searchresult {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.view {
+    text-decoration: none;
+    border-radius: 3px;
+    background-color: #eeeeee25;
+    color: #eeeeee;
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    padding: 4px 9px 4px 9px;
+}
+
+.view:hover {
+    background-color: #34c23bde;
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+/* result-table Styling */
+.result-table {
+    border-radius: 4px;
+    font-size: 1.05rem;
+    border-collapse: collapse;
+    background-color: #0b0e11;
+    margin-top: 15px;
+    box-shadow:
+    rgba(0, 0, 0, 0.39) 0px 15px 20px,
+    rgba(0, 0, 0, 0.541) 0px 12px 12px;
+}
+
+.result-table td, .result-table th {
+    text-align: center;
+    padding: 20px;
+}
+
+.result-table td{
+    border-top: 1px solid rgba(14, 17, 20, 0.980);
+    font-size: 1.1rem;
+    color: #eeeeee;
+    font-family: 'Nunito', sans-serif;
+}
+
+.result-table thead th:nth-child(even) {
+    color: #f1be2f;
+    font-family: 'Poppins', sans-serif;
+}
+
+.result-table thead th:nth-child(odd) {
+    color: #f1be2f;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width: 675px) {
+    .result-table {
+        display: block;
+        width: 100%;
+    }
+
+    .result-table thead, .result-table tbody, .result-table thead th {
+        display: block;
+    }
+
+    /* table head wordt links weergegeven. */
+    .result-table thead {
+        float: left;
+    }
+
+    .result-table tbody {
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+    }
+
+    .result-table td, .result-table th {
+        height: 80px;
+        width: 135px;
+        padding: 30px 1em .625em .625em;
+        font-size: 0.93rem;
+        vertical-align: middle;
+        text-overflow: ellipsis;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: auto;
+        border-top: none;
+    }
+
+    .result-table thead th {
+        text-align: left;
+    }
+    .result-table tbody tr {
+        display: table-cell;
+    }
+
+    .result-table tbody tr:nth-child(odd) {
+        background: none;
+    }
+    .result-table tr:nth-child(even) {
+        background: none;
+    }
+
+    .result-table tbody td {
+        display: block;
+        text-align: center;
+    }
+}

@@ -1,0 +1,62 @@
+body {
+    color: #fff;
+}
+
+.functionaliteiten {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+table {
+    background-color: #1f252b8a;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    color: #eeeeee80;
+    text-align: center;
+    border-collapse: collapse;
+    box-shadow:
+        rgba(0, 0, 0, 0.39) 0px 15px 20px,
+        rgba(0, 0, 0, 0.541) 0px 10px 10px;
+}
+
+th,
+td {
+    padding: 10px;
+}
+
+tr:nth-of-type(odd) {
+    background-color: #1f252b;
+    color: #eeeeee;
+}
+
+.center {
+    text-align: center;
+}
+
+tr.mainCal td {
+    width: 70px;
+    color: #f1be2f;
+}
+
+table a:link {
+    text-decoration: none;
+    color: #eeeeee80;
+    font-weight: 1000;
+}
+
+table a:hover {
+    color: #f1be2f;
+}
+
+.pickedDay {
+    border: 2px solid #4a4e55;
+    display: inline-block;
+    padding: 3px;
+    color: #f1be2f;
+}
+
+.pickedDay:hover {
+    opacity: 0.7;
+}

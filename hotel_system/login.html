@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="design/layout.css">
+    <link rel="stylesheet" href="design/login.css">
+    <title>Sign in</title>
+</head>
+<body>
+
+    <div class="parent">
+        <div class="container">
+            <div class="picture"></div>
+
+            <div class="loginform">
+                <div class="login">
+                    <h1>Welcome</h1>
+                    <form action="authenticate.php" method="post">
+                        <div class="centerInput">
+                            <input type="text" name="sUsername" placeholder="Username" id="sUsername" required>
+                            <input type="password" name="sPassword" placeholder="Password" id="sPassword" required>
+                            <input type="submit" value="Sign in">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

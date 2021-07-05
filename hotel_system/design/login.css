@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@500&display=swap');
+
+body {
+    height: 100vh;
+    margin: 0;
+    /* background-color: #202931; */
+}
+
+.parent {
+    max-width: 1040px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    display: flex;
+    height: 500px;
+    width: 800px;
+    border-radius: 10px;
+    box-shadow:
+        rgba(0, 0, 0, 0.600) -1px 11px 27px 3px,
+        rgba(0, 0, 0, 0.600) -1px 7px 16px 3px;
+}
+
+.picture {
+    width: 40%;
+    height: 100%;
+    background-image: url('../img/food.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px 0 0 8px;
+}
+
+.loginform {
+    width: 60%;
+    background-color: #0b0e11;
+    height: 100%;
+    border-radius: 0 8px 8px 0;
+    margin: 0 auto;
+}
+
+.login h1 {
+    text-align: center;
+    color: #f1f3f5;
+    font-size: 1.8rem;
+    font-weight: 800;
+    padding: 35px 0 10px 0;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.centerInput {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=password] {
+    display: block;
+    font-size: 0.87rem;
+    padding: 15px 0;
+    margin-bottom: 15px;
+    min-width: 280px;
+    border: none;
+    border-bottom: solid 1px #1f252b;
+    background: #0b0e11;
+    color: #eeeeee;
+    align-items: center;
+}
+
+input[type=submit] {
+    padding: 9px 21px;
+    background-color: #1f252b;
+    color: #eeeeee;
+    border: none;
+    text-align: center;
+    margin-top: 17px;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+    background-color: #7e7e7e44;
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}

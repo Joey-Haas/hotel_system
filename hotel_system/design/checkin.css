@@ -1,0 +1,145 @@
+body {
+  height: 100vh;
+  margin: 0;
+  background-color: rgba(14, 17, 20, 0.980);
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+/* Horizontaal/Verticaal centreren van de content */
+.parent {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* GUEST CHECK-IN tekst */
+.text {
+  padding-bottom: 10px;
+}
+
+.text p {
+  color: #eeeeee;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* Inputs voor tekst en passwords. */
+input[type=text],
+input[type=password],
+input[type=email] {
+  width: 95%;
+  padding: 12px;
+  border: 1px solid #0b0e1180;
+  border-radius: 2px;
+  resize: vertical;
+}
+
+/* Aanduiding welke input het is. */
+label {
+  padding: 10px 15px 15px 0;
+  display: inline-block;
+}
+
+/* Button */
+input[type=submit] {
+  background-color: #1f252b;
+  position: absolute;
+  color: #eeeeee;
+  width: 100px;
+  height: 35px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  right: 30px;
+}
+
+input[type=submit]:hover {
+  background-color: #34c23bde;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+
+/* Beide datum inputs */
+input[type=date] {
+  width: 33%;
+  padding: 12px;
+  border: none;
+  border-radius: 2px;
+}
+
+select {
+  width: 19%;
+  padding: 11px;
+  border: none;
+  border-radius: 2px;
+  resize: vertical;
+}
+
+/* Container om het formulier heen. */
+.container {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  background-color: #0b0e1180;
+  box-shadow:
+    rgba(0, 0, 0, 0.39) 0px 10px 20px,
+    rgba(0, 0, 0, 0.541) 0px 6px 6px;
+  color: #f1be2f;
+  padding: 20px 20px 70px 20px;
+  margin: 0 50px 0 0;
+}
+
+/* div voor Tekst naast input */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* input divs */
+.col-75 {
+  float: right;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Weghalen van de floats na kolommen */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsiveness - Minder dan 550px komen de kolommen op elkaar te staan. */
+@media screen and (max-width: 550px) {
+
+  .col-25,
+  .col-75 {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  input[type=submit] {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100px;
+    margin-top: 15px;
+  }
+
+  .text p {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .container {
+    max-width: 800px;
+  }
+}
